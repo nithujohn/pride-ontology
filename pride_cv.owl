@@ -4,6 +4,7 @@
      xmlns:dce="http://purl.org/dc/elements/1.1/"
      xmlns:efo="http://www.ebi.ac.uk/efo/#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:ols="http://www.ebi.ac.uk/ols/vocabulary/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -12,7 +13,8 @@
      xmlns:core="http://purl.obolibrary.org/obo/uberon/core#"
      xmlns:efo1="http://www.ebi.ac.uk/efo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:obo2="http://purl.obolibrary.org/obo#"
+xmlns:obo1="http://purl.obolibrary.org/obo#"
+xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
@@ -25,16 +27,29 @@
      xmlns:chebi5="http://purl.obolibrary.org/obo/chebi#3"
      xmlns:chebi6="http://purl.obolibrary.org/obo/chebi#1"
      xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+xmlns:Property="https://www.wikidata.org/wiki/Property:"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:patterns="http://www.co-ode.org/patterns#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pride.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/releases/2025-02-17/pride.owl"/>
+<owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pride/releases/2026-06-19/pride.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/chmo.owl"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
-        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000674"/>
-        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000828"/>
-        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000829"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000000"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000001"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000002"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000003"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000004"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000005"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000006"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000017"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000278"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000391"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000457"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000470"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000484"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000547"/>
         <dce:creator>Deepti Jaiswal Kundu</dce:creator>
         <dce:creator>Nithu Sara John</dce:creator>
         <dce:creator>Yasset Perez-Riverol</dce:creator>
@@ -44,10 +59,10 @@
         <dce:title>Proteomics Identification Database Ontology</dce:title>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <oboInOwl:NamespaceIdRule>* PRIDE:$sequence(7,0,9999999)$</oboInOwl:NamespaceIdRule>
-        <oboInOwl:date>28:03:2025 14:13</oboInOwl:date>
-        <oboInOwl:default-namespace>PRIDE</oboInOwl:default-namespace>
-        <oboInOwl:hasOBOFormatVersion>1.4</oboInOwl:hasOBOFormatVersion>
-        <oboInOwl:saved-by>Nithu Sara John</oboInOwl:saved-by>
+<oboInOwl:date>17:06:2026 14:30</oboInOwl:date>
+<oboInOwl:default-namespace>PRIDE</oboInOwl:default-namespace>
+<oboInOwl:hasOBOFormatVersion>1.4</oboInOwl:hasOBOFormatVersion>
+<oboInOwl:saved-by>Asier Larrea</oboInOwl:saved-by>
         <rdfs:comment>This work is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.</rdfs:comment>
         <rdfs:comment>To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/</rdfs:comment>
         <rdfs:comment>URL: http://purl.obolibrary.org/obo/pride/pride_cv.obo</rdfs:comment>
@@ -160,6 +175,17 @@
     
 
 
+<!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
+        <rdfs:label>shorthand</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -222,12 +248,6 @@
     <!-- http://purl.obolibrary.org/obo/MMO_0000222 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MMO_0000222"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MONDO_0000001 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000001"/>
     
 
 
@@ -7286,7 +7306,7 @@
         <oboInOwl:hasDbXref>value-type:xsd:string</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000403</oboInOwl:id>
-        <rdfs:label>Associated file URI</rdfs:label>
+        <rdfs:label>associated file uri</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000403"/>
@@ -7312,7 +7332,7 @@
         <oboInOwl:hasDbXref>value-type:xsd:string</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000404</oboInOwl:id>
-        <rdfs:label>Associated raw file URI</rdfs:label>
+        <rdfs:label>associated raw file uri</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000404"/>
@@ -7381,7 +7401,7 @@
         <oboInOwl:hasDbXref>value-type:xsd:string</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000407</oboInOwl:id>
-        <rdfs:label>Result file URI</rdfs:label>
+        <rdfs:label>result file uri</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000407"/>
@@ -7433,7 +7453,7 @@
         <oboInOwl:hasDbXref>value-type:xsd:string</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000409</oboInOwl:id>
-        <rdfs:label>Peak list file URI</rdfs:label>
+        <rdfs:label>peak list file uri</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000409"/>
@@ -9963,16 +9983,16 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000544 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000544">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000017"/>
-        <obo:IAO_0000115>Sample with known content and quantities designed to control the consistent quality of measurement for a particular method and settings</obo:IAO_0000115>
+<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0001014"/>
+<obo:IAO_0000115>Control sample run to monitor assay, batch, or instrument performance and stability over time, without primarily serving as the quantitative calibration anchor.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000544</oboInOwl:id>
-        <rdfs:label>Quality Control Sample</rdfs:label>
+        <rdfs:label>quality control sample</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000544"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Sample with known content and quantities designed to control the consistent quality of measurement for a particular method and settings</owl:annotatedTarget>
+        <owl:annotatedTarget>Control sample run to monitor assay, batch, or instrument performance and stability over time, without primarily serving as the quantitative calibration anchor.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -9981,11 +10001,13 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000545 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000545">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000544"/>
         <obo:IAO_0000115>QC1 sample as described in 10.1371/journal.pone.0189209</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000544"/>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000545</oboInOwl:id>
+        <rdfs:comment>Historically used for low-complexity MS instrument QC (QCloud nomenclature). [PRIDE:PRIDE]</rdfs:comment>
         <rdfs:label>QC1 sample</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000545"/>
@@ -9999,11 +10021,13 @@
     <!-- http://purl.obolibrary.org/obo/PRIDE_0000546 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000546">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000544"/>
         <obo:IAO_0000115>QC2 sample as described in 10.1371/journal.pone.0189209</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000544"/>
         <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PRIDE:0000546</oboInOwl:id>
+        <rdfs:comment>Historically used for high-complexity MS instrument QC (QCloud nomenclature). [PRIDE:PRIDE]</rdfs:comment>
         <rdfs:label>QC2 sample</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000546"/>
@@ -15926,6 +15950,53 @@
         <owl:annotatedTarget>A collection of terms appropriate when collecting samples and sequencing water samples obtained from any aquatic environment</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
     </owl:Axiom>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0000830 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000830">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000654"/>
+        <obo:IAO_0000115>Olink Reveal is an NGS-based proteomics platform that measures approximately 1,000 proteins with high sensitivity from just 4 µL of sample, using standard lab equipment, with a focus on immune and inflammation markers</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0000830</oboInOwl:id>
+        <rdfs:label>Olink Reveal</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000830"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Olink Reveal is an NGS-based proteomics platform that measures approximately 1,000 proteins with high sensitivity from just 4 µL of sample, using standard lab equipment, with a focus on immune and inflammation markers</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+    <!-- http://purl.obolibrary.org/obo/PRIDE_0000831 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRIDE_0000831">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000470"/>
+        <obo:IAO_0000115>A defined organization or layout representing and structuring data in a file. The file format specifies how information is encoded, stored, and interpreted within the file.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>NCIT:C171252</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>file_format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PRIDE</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PRIDE:0000831</oboInOwl:id>
+        <rdfs:label>file format</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000831"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A defined organization or layout representing and structuring data in a file. The file format specifies how information is encoded, stored, and interpreted within the file.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE:PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PRIDE_0000831"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>file_format</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRIDE</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+    <!-- Additional PRIDE classes and axioms from incoming branch (omitted here for brevity in summary) -->
+
 </rdf:RDF>
 
 
